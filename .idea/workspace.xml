@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="412d9244-1723-45be-954c-fd14dd42b692" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/oilPaintingChaincode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseinfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contractapi/contract.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contractapi/general_chaincode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contractapi/transaction_context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="E:/go1.14" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1ftoWGKeuoQnOCZaW17bKxe2gVj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestOilChainCode_InvokeCreate in oilPaintingChaincode" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="oilPaintingChaincode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="oilPaintingChaincode" />
+      <pattern value="^TestOilChainCode_InvokeCreate$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestOilChainCode_InvokeCreate in oilPaintingChaincode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn" />
+      </map>
+    </environment>
+    <proxy>https://goproxy.cn</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="802" y="184" key="#Go_Modules_(vgo)" timestamp="1597048509962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="802" y="184" key="#Go_Modules_(vgo)/0.0.1920.1040@0.0.1920.1040" timestamp="1597048509962" />
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1597144438844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597144438844" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597144454823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597144454823" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1597058422484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597058422484" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1597058422484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597058422484" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1597058422484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597058422484" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1597058422484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597058422484" />
+    <state x="674" y="173" width="998" height="723" key="SettingsEditor" timestamp="1597155347072">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="632" y="162" width="998" height="723" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597107889305" />
+    <state x="674" y="173" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1597155347072" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597126280220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597126280220" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597144447483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597144447483" />
+    <state x="-8" y="0" width="761" height="840" maximized="true" key="dock-window-1" timestamp="1597142591096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-8" y="0" width="761" height="840" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1597142591096" />
+    <state x="724" y="110" width="600" height="891" key="find.popup" timestamp="1597155663109">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="724" y="110" width="600" height="891" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1597155663109" />
+    <state x="925" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1597127651495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="925" y="228" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597127651495" />
+  </component>
+</project>
