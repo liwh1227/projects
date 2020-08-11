@@ -138,3 +138,24 @@ type Key struct {
 	// 油画创作过程的步骤：0. 1. 2. 3
 	ProductionProcess int `json:"productionProcess"`
 }
+
+type TimeValue struct {
+	// 发起时间
+	CreateTime string `json:"createTime"`
+	// 更新时间
+	UpdateTime string `json:"updateTime"`
+	// 确认时间
+	ConfirmTime string `json:"confirmTime"`
+}
+
+// request
+type ChainCodeRequest struct {
+	// DocType
+	DocType string `json:"docType"`
+	// 定制id
+	CustomId string `json:"customId"`
+	// 油画创作过程的步骤：0. 1. 2. 3
+	ProductionProcess int `json:"productionProcess"`
+	// confirm
+	ConfirmStatus int `json:"confirmStatus"`
+}
