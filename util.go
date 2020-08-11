@@ -5,6 +5,7 @@ import (
 	"oilPaintingChaincode/contractapi"
 	"reflect"
 	"strconv"
+	"time"
 )
 
 // getKey 获取请求的Key值
@@ -27,20 +28,20 @@ func getKey(in interface{}) []string {
 }
 
 // validator 验证confirm阶段的参数是否与链上一致
-func validator(ctx contractapi.TransactionContextInterface, baseInfo *OilBaseInfo) (bool, error) {
+func validator(ctx contractapi.TransactionContextInterface, info interface{}, docType string) (bool, error) {
 	// 1.get val by key
-	bytes, err := Read(ctx, baseInfo.DocType, getKey(baseInfo))
+	bytes, err := Read(ctx, docType, getKey(info))
 	if err != nil {
 		return false, err
 	}
 	// 2.获取链码上的oilBaseInfo
-	chaincodeBaseInfo := new(OilBaseInfo)
-	err = json.Unmarshal(bytes, chaincodeBaseInfo)
+	var v interface{}
+	err = json.Unmarshal(bytes, v)
 	if err != nil {
 		return false, err
 	}
 	// 3.对比
-	if reflect.DeepEqual(baseInfo, chaincodeBaseInfo) {
+	if reflect.DeepEqual(info, v) {
 		return true, nil
 	}
 	return false, nil
@@ -59,8 +60,52 @@ func getOilInfo(args []string, in interface{}) error {
 			return err
 		}
 	case *OilColorInfo:
+		in = new(OilColorInfo)
+		err := json.Unmarshal([]byte(args[0]), in)
+		if err != nil {
+			return err
+		}
 	case *OilShadowInfo:
+		in = new(OilShadowInfo)
+		err := json.Unmarshal([]byte(args[0]), in)
+		if err != nil {
+			return err
+		}
 	case *OilSketchInfo:
+		in = new(OilSketchInfo)
+		err := json.Unmarshal([]byte(args[0]), in)
+		if err != nil {
+			return err
+		}
 	}
 	return nil
+}
+
+//
+func handleChainCode(ctx contractapi.TransactionContextInterface, req *ChainCodeRequest) (*TimeValue, error) {
+	// 3.1获取是否存在该key，若无,则赋值createTime
+	bytes, err := Read(ctx, req.DocType, []string{req.DocType, req.CustomId, strconv.Itoa(req.ProductionProcess)})
+	if err != nil {
+		return nil, err
+	}
+	t := new(TimeValue)
+	// 3.2 不存在,createTime 赋值
+	if len(bytes) == 0 {
+		t.CreateTime = time.Now().String()
+	} else if req.ConfirmStatus == CONFIRMED {
+		// 3.3.1 校验
+		isEqual, err := validator(ctx, req, req.DocType)
+		if err != nil {
+			return nil, err
+		}
+
+		if !isEqual {
+			return nil, err
+		}
+		// 3.3.2 校验成功后，
+		t.ConfirmTime = time.Now().String()
+	} else {
+		t.UpdateTime = time.Now().String()
+	}
+	return t, nil
 }
