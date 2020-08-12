@@ -1,4 +1,4 @@
-package oilPaintingChaincode
+package main
 
 import (
 	"log"
