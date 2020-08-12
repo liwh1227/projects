@@ -8,7 +8,6 @@ import (
 )
 
 func BadRequest(msg string) peer.Response {
-	fmt.Println("400 response", msg)
 	return peer.Response{
 		Status:  400,
 		Message: msg,
@@ -16,8 +15,6 @@ func BadRequest(msg string) peer.Response {
 }
 
 func Save(ctx contractapi.TransactionContextInterface, objectType string, attributes []string, payload interface{}) ([]byte, error) {
-	fmt.Println("Saving", objectType, attributes, payload)
-
 	key, err := ctx.GetStub().CreateCompositeKey(objectType, attributes)
 	if err != nil {
 		return nil, err
@@ -42,14 +39,14 @@ func Save(ctx contractapi.TransactionContextInterface, objectType string, attrib
 func Read(ctx contractapi.TransactionContextInterface, objectType string, attributes []string) ([]byte, error) {
 	key, err := ctx.GetStub().CreateCompositeKey(objectType, attributes)
 	if err != nil {
+		fmt.Println("CreateCompositeKey")
 		return nil, err
 	}
-
 	res, err := ctx.GetStub().GetState(key)
 	if err != nil {
+		fmt.Println("GetState")
 		return nil, err
 	}
-
 	return res, nil
 }
 
